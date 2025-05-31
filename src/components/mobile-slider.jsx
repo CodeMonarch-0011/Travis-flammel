@@ -2,11 +2,16 @@ import "../style/components.css"
 import { BsX } from "react-icons/bs"
 import { navigate } from "../utils/mailer"
 
-export function MobileSlider ({ setSliderOpen }) {
+export function MobileSlider ({ setSliderOpen, setContactOpen }) {
 
     function handleNavigation (link) {
         navigate(link)
         setSliderOpen(false)
+    }
+
+    function contact () {
+        setContactOpen(true)
+        setSliderOpen(false)        
     }
 
     return (
@@ -18,7 +23,7 @@ export function MobileSlider ({ setSliderOpen }) {
                 <span onClick={() => handleNavigation("#story")}>His Story</span>
                 <span onClick={() => handleNavigation("#modelling")}>His Modeling Career</span>
                 <span onClick={() => handleNavigation("#adventures")}>Adventures</span>
-                <span onClick={() => handleNavigation("#contact")}>Contact Us</span>
+                <span onClick={contact}>Contact Us</span>
             </nav>
 
             <button className="button slider-button" onClick={() => openMail("artistmanagementinquiries@gmail.com")}>

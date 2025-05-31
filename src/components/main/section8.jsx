@@ -12,7 +12,7 @@ function Copyright () {
     )
 }
 
-export function Section8 () {
+export function Section8 ({ setContactOpen }) {
     return (
         <div className="section-8" id="contact">
             <span className="section-8-header">
@@ -23,7 +23,7 @@ export function Section8 () {
                 From his humble beginnings on an Australian farm to becoming a globally recognized actor and entrepreneur, Travis Fimmel’s journey is a testament to his versatility, authenticity, and dedication to his craft. Whether portraying legendary warriors, complex antiheroes, or exploring new business ventures, Travis continues to captivate audiences with his compelling performances and down-to-earth persona.
             </span>
 
-            <button className="button secondary-button" onClick={() => openMail("artistmanagementinquiries@gmail.com")}> Reach Out To Us</button>
+            <button className="button secondary-button" onClick={() => setContactOpen(true)}> Reach Out To Us</button>
 
             <div className="section-8-contacts">
                 <span onClick={() => openSocial("https://www.instagram.com/travisfimmel")}> <AiFillInstagram /> </span>

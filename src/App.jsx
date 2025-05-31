@@ -3,23 +3,32 @@ import { useState } from 'react'
 import { Navbar } from './components/navbar'
 import Main from "./pages/main/Page"
 import { MobileSlider } from './components/mobile-slider'
+import { ContactForm } from './components/contact-form'
 
 function App() {
 
   const [ sliderOpen, setSliderOpen ] = useState(false)
+  const [ contactOpen, setContactOpen ] = useState(false)
 
-  console.log(sliderOpen)
 
   return (
     <div className='app'> 
-      <Navbar setSliderOpen={setSliderOpen} openSlider={sliderOpen} />
+      <Navbar setSliderOpen={setSliderOpen} openSlider={sliderOpen} setContactOpen={setContactOpen} />
 
-      <Main />
+      <Main setContactOpen={setContactOpen} />
       
       {
-        sliderOpen
+        sliderOpen && !contactOpen
         ?
-        <MobileSlider setSliderOpen={setSliderOpen} />
+        <MobileSlider setSliderOpen={setSliderOpen} setContactOpen={setContactOpen} />
+        :
+        <></>
+      }
+
+      {
+        contactOpen
+        ?
+        <ContactForm setContactOpen={setContactOpen} />
         :
         <></>
       }
