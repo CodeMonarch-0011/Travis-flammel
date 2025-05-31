@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-SemiBold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-Bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("/fonts/poppins/Poppins-Bold.otf");
+    font-weight: 800;
+}
+
+
+@font-face {
+    font-family: Oswalds;
+    src: url("/fonts/oswalds/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: BenchNine;
+    src: url("/fonts/bench-nine/BenchNine-Light.ttf");
+    font-size: 300;
+}
+
+
+@font-face {
+    font-family: BenchNine;
+    src: url("/fonts/bench-nine/BenchNine-regular.ttf");
+    font-size: 400;
+}
+
+@font-face {
+    font-family: BenchNine;
+    src: url("/fonts/bench-nine/BenchNine-Bold.ttf");
+    font-size: 800;
+}
