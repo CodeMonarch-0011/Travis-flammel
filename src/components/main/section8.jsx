@@ -26,9 +26,9 @@ export function Section8 ({ setContactOpen }) {
             <button className="button secondary-button" onClick={() => setContactOpen(true)}> Reach Out To Us</button>
 
             <div className="section-8-contacts">
-                <span onClick={() => openSocial("https://www.instagram.com/travisfimmel")}> <AiFillInstagram /> </span>
-                <span onClick={() => openSocial("https://m.imdb.com/name/nm1379938")}> <FaImdb /> </span>
-                <span onClick={() => openSocial("https://www.facebook.com/profile.php?id=61564081196362")}> <FaFacebookSquare /> </span>
+                <span> <AiFillInstagram /> </span>
+                <span> <FaImdb /> </span>
+                <span> <FaFacebookSquare /> </span>
             </div>
 
             <Copyright />
